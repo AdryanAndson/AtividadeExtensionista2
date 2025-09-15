@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techsound: Som Para Todos - Uma Iniciativa Solidária</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="containerH">
+      <nav class="navbar">
+        <div class="logo">
+          <h1 class="titulo">
+            <i class="fas fa-headphones-alt"></i> Techsound: Som Para Todos
+          </h1>
+        </div>
+
+        <div class="lista">
+          <!--DIV CONTENDO O MENU DESKTOP-->
+          <ul class="lista">
+            <li class="listaItem">
+              <a class="navLink" href="#home">Home</a>
+            </li>
+            <li class="listaItem">
+              <a class="navLink" href="#doacoes">Doações</a>
+            </li>
+            <li class="listaItem">
+              <a class="navLink" href="#quemSomos">Quem Somos</a>
+            </li>
+            <li class="listaItem">
+              <a class="navLink" href="#comunidade">Comunidade</a>
+            </li>
+            <li class="listaItem">
+              <a class="navLink" href="#objetivos">Nossos Objetivos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobileMenuIcon">
+          <!--FUNÇÃO PARA ABRIR O MENU MOBILE-->
+          <button onclick="mostrarMenu()">
+            <i class="fas fa-bars icon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu">
+        <!--DIV CONTENDO O MENU MOBILE-->
+        <ul>
+          <li class="listaItem">
+            <a class="navLink" href="#home">Home</a>
+          </li>
+          <li class="listaItem">
+            <a class="navLink" href="#doacoes">Doações</a>
+          </li>
+          <li class="listaItem">
+            <a class="navLink" href="#quemSomos">Quem Somos</a>
+          </li>
+          <li class="listaItem">
+            <a class="navLink" href="#comunidade">Comunidade</a>
+          </li>
+          <li class="listaItem">
+            <a class="navLink" href="#objetivos">Nossos Objetivos</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="containerPrincipal">
+      <section id="home">
+        <!--SECTION COM A PRIMEIRA PARTE DE TEXTO E IMAGEM-->
+        <div class="containerBlue">
+          <img
+            class="img"
+            id="img1"
+            src="./ASSETS/img/aparelho-auditivo.jpg"
+            alt="Aparelho auditivo"
+          />
+          <div class="outdoor">
+            <h2 class="containerOutdoor">
+              Juntos, Podemos Fazer a Diferença na Vida de Quem Precisa Ouvir!
+            </h2>
+            <p class="outdoorTxt">
+              A Techsound é uma iniciativa recente e apaixonada, dedicada a
+              melhorar a acessibilidade auditiva. Nosso foco é ajudar pessoas
+              com deficiência auditiva de comunidades carentes a terem acesso a
+              aparelhos cocleares, promovendo inclusão e reduzindo
+              desigualdades.
+            </p>
+            <a
+              href="https://www.vakinha.com.br/vaquinha/techsound-som-para-todos-uma-iniciativa-solidaria"
+              class="btn-doar"
+              >Apoie Nossa Causa</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="sec">
+        <!--SECTION COM A IDEIA E APRESENTAÇÃO DO PROJETO E SEGUNDA IMAGEM-->
+        <div class="containerTxt">
+          <div class="texto">
+            <h3>Nossa Visão Inicial</h3>
+            <p class="ideiaTxt">
+              Como uma iniciativa em estágio inicial, acreditamos que pequenas
+              ações podem gerar grandes mudanças. Nosso objetivo é conscientizar
+              sobre as dificuldades enfrentadas por pessoas com deficiência
+              auditiva e mostrar como a tecnologia pode transformar vidas.
+            </p>
+            <p>Estamos dando os primeiros passos para:</p>
+            <ul class="listaVantagens">
+              <li class="vantagens">
+                <i class="fas fa-seedling"></i> Criar uma rede de apoio para
+                pessoas com deficiência auditiva
+              </li>
+              <li class="vantagens">
+                <i class="fas fa-hands-helping"></i> Estabelecer parcerias com
+                profissionais e instituições de saúde
+              </li>
+              <li class="vantagens">
+                <i class="fas fa-bullhorn"></i> Aumentar a conscientização sobre
+                a importância da saúde auditiva
+              </li>
+              <li class="vantagens">
+                <i class="fas fa-heart"></i> Arrecadar fundos para futuros
+                projetos de implantes cocleares
+              </li>
+            </ul>
+          </div>
+          <img
+            class="img"
+            id="img2"
+            src="./ASSETS/img/modelo.jpg"
+            alt="Pessoa sorrindo representando esperança"
+          />
+        </div>
+      </section>
+
+      <section id="doacoes">
+        <div class="containerDoacoes">
+          <h2>Por que suas doações são essenciais para nós?</h2>
+          <p>
+            Como uma iniciativa em fase inicial, cada contribuição é fundamental
+            para nosso crescimento e impacto:
+          </p>
+          <ul>
+            <li>Ajuda a criar uma base sólida para nossos futuros projetos</li>
+            <li>Permite a organização de eventos de conscientização</li>
+            <li>
+              Contribui para a criação de material educativo sobre saúde
+              auditiva
+            </li>
+            <li>Auxilia no estabelecimento de parcerias estratégicas</li>
+          </ul>
+          <p>
+            Sua doação, por menor que seja, é um grande passo para realizarmos
+            nosso sonho de ajudar quem precisa!
+          </p>
+          <a
+            href="https://www.vakinha.com.br/vaquinha/techsound-som-para-todos-uma-iniciativa-solidaria"
+            class="btn-doar-grande"
+            >Faça Parte Desta Jornada</a
+          >
+        </div>
+      </section>
+
+      <section id="quemSomos">
+        <!--SECTION CONTENDO O QUEM SOMOS-->
+        <div class="containerQuemSomos">
+          <img
+            class="img"
+            id="img3"
+            src="./ASSETS/img/hearing-aid.jpg"
+            alt="Símbolo representando nossa missão"
+          />
+          <div class="txtDiv">
+            <h3 class="quemSomosTitulo">Quem Somos</h3>
+            <p class="quemSomosTxt">
+              Somos dois estudantes universitários unidos por um sonho comum:
+              fazer a diferença na vida das pessoas. Nossa iniciativa nasceu de
+              um projeto de extensão da faculdade, com o objetivo de reduzir a
+              desigualdade na sociedade. Embora sejamos iniciantes, nossa paixão
+              e compromisso são enormes. Focamos em melhorar a acessibilidade
+              para pessoas com limitações auditivas, sociais e econômicas,
+              acreditando que cada pequeno passo pode levar a grandes mudanças.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidade">
+        <!--SECTION CONTENDO A COMUNIDADE-->
+        <div class="containerComunidade">
+          <img
+            class="img"
+            id="img4"
+            src="./ASSETS/img/signals-conversation.jpg"
+            alt="Pessoas conversando em linguagens de sinais."
+          />
+          <div class="txtDiv">
+            <h3 class="comunidadeTitulo">
+              Conheça e participe de nossa comunidade!
+            </h3>
+            <p class="comunidadeTxt">
+              Com o objetivo de alcançar mais pessoas e reunir a comunidade
+              surda em um espaço de acolhimento e fraternidade, criamos nossa
+              própria comunidade no Discord. É um ambiente dedicado à
+              socialização, troca de experiências e apoio mútuo.
+            </p>
+            <h5>Junte-se a nós e faça parte dessa conexão!</h5>
+            <a href="" class="btn-comunidade">Entre em nossa comunidade!</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="objetivos">
+        <h2>Nossos Objetivos Iniciais</h2>
+        <div class="objetivos-lista">
+          <div class="objetivo">
+            <i class="fas fa-book-reader"></i>
+            <h3>Educação</h3>
+            <p>Informar e conscientizar sobre saúde auditiva</p>
+          </div>
+          <div class="objetivo">
+            <i class="fas fa-handshake"></i>
+            <h3>Parcerias</h3>
+            <p>Estabelecer conexões com profissionais e instituições</p>
+          </div>
+          <div class="objetivo">
+            <i class="fas fa-piggy-bank"></i>
+            <h3>Arrecadação</h3>
+            <p>Iniciar um fundo para futuros projetos de implantes</p>
+          </div>
+          <div class="objetivo">
+            <i class="fas fa-users"></i>
+            <h3>Comunidade</h3>
+            <p>Criar uma rede de apoio para pessoas com deficiência auditiva</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <!--FOOTER-->
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Techsound: Uma Iniciativa em Crescimento. Todos os
+          direitos reservados.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <!--teste envio-->
+</html>

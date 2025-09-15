@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* CONFIGURAÇÕES DE DESIGN DA PÁGINA */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fonte: "Open Sans", sans-serif;
+  --corFonteNav: #d6edff;
+  --corFonteBlue: #222e50;
+  --backFooter: #76949f;
+  --Links: #ffe66d;
+  --backBlue: #acd7ec;
+  --backNav: #04151f;
+  --destaque: #ff6b6b;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--backNav);
+  font-family: var(--fonte);
+  color: var(--corFonteNav);
+  padding: 24px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--destaque);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--corFonteNav);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--Links);
+  text-shadow: 0 0 5px rgba(255, 230, 109, 0.5);
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 64px;
+  padding: 12px;
+}
+
+.lista a {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* MENU MOBILE */
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: var(--backNav);
+  font-family: var(--fonte);
+  color: var(--corFonteNav);
+}
+
+.open {
+  display: block;
+}
+
+/* BODY DA PÁGINA */
+
+/* PRIMEIRO CONTAINER */
+.containerBlue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--backBlue);
+  min-height: 35rem;
+  font-family: var(--fonte);
+  color: var(--corFonteBlue);
+  font-size: 24px;
+  padding: 40px 20px;
+}
+
+#img1 {
+  margin-top: 100px;
+  margin-left: 32px;
+}
+
+.img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outdoor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.outdoorTxt {
+  font-size: 20px;
+  padding: 32px;
+  line-height: 1.6;
+}
+
+/* SEGUNDO CONTAINER */
+
+.containerTxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  min-height: 30rem;
+  background-color: var(--backNav);
+  color: var(--corFonteNav);
+  font-family: var(--fonte);
+  font-size: 24px;
+}
+
+.ideiaTxt {
+  font-size: 22px;
+  padding: 32px;
+  line-height: 1.6;
+}
+
+.listaVantagens {
+  font-size: 21px;
+  padding-left: 42px;
+  line-height: 1.8;
+}
+
+/* TERCEIRO CONTAINER */
+
+.txtDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.containerQuemSomos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backBlue);
+  min-height: 30rem;
+  font-family: var(--fonte);
+  color: var(--corFonteBlue);
+  font-size: 24px;
+  padding: 32px;
+}
+
+.quemSomosTxt {
+  font-size: 20px;
+  padding: 32px;
+  line-height: 1.6;
+}
+
+/* CONTAINER COMUNIDADE */
+
+.containerComunidade {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backBlue);
+  min-height: 30rem;
+  font-family: var(--fonte);
+  color: var(--corFonteBlue);
+  font-size: 24px;
+  padding: 32px;
+}
+
+.comunidadeTxt {
+  flex-direction: column;
+  font-size: 20px;
+  padding: 32px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+.foot {
+  display: block;
+  text-align: center;
+  background-color: var(--backFooter);
+  font-family: var(--fonte);
+  color: var(--corFonteNav);
+  padding: 20px 0;
+}
+
+/* CONFIGURAÇÕES MOBILE */
+@media (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  /* BARRA DE NAVEGAÇÃO */
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 32px;
+    position: unset;
+  }
+
+  .listaItem {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  .mobileMenuIcon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mobileMenu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .mobileMenu .listaItem {
+    display: block;
+    padding: 1rem;
+  }
+
+  /* CONTAINERS, IMAGENS E TEXTO */
+
+  .containerBlue,
+  .containerQuemSomos,
+  .containerTxt,
+  .containerComunidade {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 16px;
+  }
+
+  .containerQuemSomos,
+  .containerComunidade {
+    flex-direction: column-reverse;
+  }
+
+  #img1,
+  .outdoor {
+    margin: 0;
+  }
+
+  .img {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .outdoorTxt {
+    font-size: 16px;
+  }
+
+  .ideiaTxt {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .listaVantagens {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .quemSomosTxt {
+    font-size: 16px;
+    padding: 2px;
+  }
+}
+
+/* Estilos para a seção de doações */
+/* Estilos para a seção de doações */
+.containerDoacoes {
+  background-color: var(--backBlue);
+  padding: 40px;
+  text-align: center;
+  font-family: var(--fonte);
+  color: var(--corFonteBlue);
+}
+
+.containerDoacoes h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--destaque);
+}
+
+.containerDoacoes p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.containerDoacoes ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.containerDoacoes li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.btn-doar-grande {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--Links);
+  color: var(--backNav);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-doar-grande:hover {
+  background-color: var(--destaque);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para a seção de objetivos */
+#objetivos {
+  background-color: var(--backNav);
+  padding: 40px;
+  text-align: center;
+  font-family: var(--fonte);
+  color: var(--corFonteNav);
+}
+
+#objetivos h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--destaque);
+}
+
+.objetivos-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.objetivo {
+  width: 200px;
+  margin: 20px;
+}
+
+.objetivo i {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: var(--Links);
+}
+
+.objetivo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--destaque);
+}
+
+.objetivo p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Estilos para o footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.social-media a {
+  color: var(--corFonteNav);
+  font-size: 24px;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  color: var(--destaque);
+  transform: scale(1.1);
+}
+
+/* Alguns destaques de link principais  */
+.btn-doar,
+.btn-apoiar,
+.btn-comunidade {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--Links);
+  color: var(--backNav);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-doar:hover,
+.btn-apoiar:hover,
+.btn-comunidade {
+  background-color: var(--destaque);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* as reposividades para proximas seções */
+@media (max-width: 768px) {
+  .containerDoacoes {
+    padding: 20px;
+  }
+
+  .containerDoacoes h2 {
+    font-size: 24px;
+  }
+
+  .containerDoacoes p,
+  .containerDoacoes li {
+    font-size: 14px;
+  }
+
+  .btn-doar-grande,
+  .btn-doar,
+  .btn-apoiar {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #objetivos {
+    padding: 20px;
+  }
+
+  #objetivos h2 {
+    font-size: 24px;
+  }
+
+  .objetivo {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+
+  .social-media a {
+    margin: 0 5px;
+  }
+}
